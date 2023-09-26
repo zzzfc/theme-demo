@@ -10,15 +10,14 @@
           th:href="@{${post.status.permalink}}"
           th:text="${post.spec.title}"
         ></a>
-      </li>
-      <li>
-        <h5 th:text="${post.spec.slug}"></h5>
+        <br>
+        <a th:text="${post.spec.slug}"></a>
         -
-        <h5 th:text="${post.spec.owner}"></h5>
+        <a th:text="${post.spec.owner}"></a>
         -
-        <h5 th:text="${post.spec.publishTime}"></h5>
+        <a th:text="${post.spec.publishTime}"></a>
         -
-        <h5 th:text="${post.spec.categirues}"></h5>
+        <a th:text="${post.spec.categirues}"></a>
       </li>
     </ul>
     <a th:if="${posts.hasPrevious()}" th:href="@{${posts.prevUrl}}">上一页</a>
