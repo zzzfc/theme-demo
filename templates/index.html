@@ -21,4 +21,9 @@
     <a th:if="${posts.hasPrevious()}" th:href="@{${posts.prevUrl}}">上一页</a>
     <a th:if="${posts.hasNext()}" th:href="@{${posts.nextUrl}}">下一页</a>
   </th:block>
+
+  <article>
+    <h1 th:text="${post.spec.title}"></h1>
+    <div th:utext="${post.content.content}"> </div>
+  </article>
 </html>
