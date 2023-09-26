@@ -5,7 +5,7 @@ metadata:
 spec:
   displayName: Theme Demo
   author:
-    name: halo-demo
+    name: demo
     website: "http://halo.zfc.life"
   description: 这个一个helo2的Demo模板
   logo: "https://halo.run/logo"
@@ -14,4 +14,4 @@ spec:
   settingName: "theme-demo-setting"
   configMapName: "theme-demo-configMap"
   version: "1.0"
-  require: "*"
+  require: 2.0.0
