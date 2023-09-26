@@ -16,8 +16,6 @@
         <a th:text="${post.spec.owner}"></a>
         -
         <a th:text="${post.spec.publishTime}"></a>
-        -
-        <a th:text="${post.spec.categirues}"></a>
       </li>
     </ul>
     <a th:if="${posts.hasPrevious()}" th:href="@{${posts.prevUrl}}">上一页</a>
